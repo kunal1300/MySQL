@@ -145,3 +145,4 @@ select * from sales1;
 select month(SaleDate) as CMonth,sum(Quantity*Price) as "Sales" from sales1
 where year(SaleDate) = 2024
 group by CMonth order by CMonth;
+
