@@ -176,3 +176,21 @@ insert into Students(sid,age,course) values (7,23,"python");
 
 
 
+create table students2
+ (
+	sid tinyint primary key auto_increment,
+	name varchar(100) not null,
+    age tinyint check(age>18),
+    gender enum('male','female'),
+    email varchar(100) unique not null,
+    phone_num char(10) unique,
+    address varchar(100) default 'unkown'
+); 
+
+alter table students2
+add column about varchar(200);
+
+alter table students2
+modify column about text;
+
+describe students2;
