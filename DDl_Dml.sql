@@ -193,4 +193,7 @@ add column about varchar(200);
 alter table students2
 modify column about text;
 
+alter table students2
+change column sid sid_id int ;
+
 describe students2;
